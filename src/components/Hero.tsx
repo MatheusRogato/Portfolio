@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -13,16 +12,27 @@ const Hero = () => {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center px-4 bg-gradient-subtle relative">
       <div className="max-w-5xl mx-auto text-center">
-        {/* Professional Photo */}
-        <div className="mb-8 flex justify-center animate-scale-in">
-          <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-primary rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-            <Avatar className="w-40 h-40 md:w-48 md:h-48 border-4 border-primary/20 shadow-card-hover relative">
-              <AvatarImage src="/profile.png" alt="Matheus Rogato" />
-              <AvatarFallback className="text-4xl font-bold bg-gradient-primary text-primary-foreground">
-                MR
-              </AvatarFallback>
-            </Avatar>
+        {/* Abstract Modern Animation replacing Profile Photo */}
+        <div className="mb-12 flex justify-center animate-scale-in perspective-1000">
+          <div className="relative w-48 h-48 md:w-64 md:h-64 flex items-center justify-center group">
+            {/* Glowing background blur */}
+            <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-30 group-hover:opacity-60 transition-opacity duration-700 ease-in-out"></div>
+            
+            {/* Outer rotating ring */}
+            <div className="absolute inset-0 rounded-full border-t-2 border-r-2 border-primary/50 animate-[spin_8s_linear_infinite]"></div>
+            <div className="absolute inset-2 rounded-full border-b-2 border-l-2 border-accent/50 animate-[spin_12s_linear_infinite_reverse]"></div>
+            
+            {/* Inner pulsing core */}
+            <div className="relative z-10 w-24 h-24 md:w-32 md:h-32 bg-gradient-primary rounded-2xl rotate-45 animate-[bounce_4s_ease-in-out_infinite] shadow-card-hover flex items-center justify-center overflow-hidden">
+               <div className="w-full h-full bg-background/20 backdrop-blur-sm absolute inset-0"></div>
+               <div className="text-primary-foreground font-mono font-bold text-2xl -rotate-45 relative z-20 animate-pulse">
+                 &lt;/&gt;
+               </div>
+            </div>
+            
+            {/* Orbiting particles */}
+            <div className="absolute w-3 h-3 bg-primary rounded-full top-0 left-1/2 -translate-x-1/2 animate-[ping_3s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
+            <div className="absolute w-2 h-2 bg-accent rounded-full bottom-0 right-1/4 animate-[ping_4s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
           </div>
         </div>
 

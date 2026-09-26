@@ -36,23 +36,19 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <div className="space-y-6 animate-slide-in">
-            <p className="text-lg text-foreground/90 leading-relaxed">
-              Com experiência sólida em desenvolvimento fullstack, trabalho com diversas tecnologias
-              para criar aplicações robustas e escaláveis. Minha expertise abrange desde desenvolvimento
-              mobile com <span className="text-primary font-semibold">Flutter</span> até backends
-              complexos com <span className="text-primary font-semibold">.NET</span> e{" "}
-              <span className="text-primary font-semibold">Ruby on Rails</span>.
-            </p>
-            <p className="text-lg text-foreground/90 leading-relaxed">
-              Atualmente, estou expandindo meus conhecimentos em{" "}
-              <span className="text-accent font-semibold">Angular</span>, sempre buscando
-              me manter atualizado com as últimas tendências e tecnologias do mercado.
-            </p>
-            <p className="text-lg text-foreground/90 leading-relaxed">
-              Acredito em código limpo, arquiteturas bem definidas e na importância
-              de trabalhar em equipe para entregar produtos de qualidade.
-            </p>
+          <div className="space-y-6 animate-slide-in relative">
+            <div className="absolute -inset-4 bg-gradient-primary opacity-5 rounded-2xl blur-lg pointer-events-none"></div>
+            <div className="relative bg-background/60 backdrop-blur-md border border-border/50 p-8 rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-500">
+              <p className="text-lg text-foreground/90 leading-relaxed mb-6">
+                Engenheiro de Software Fullstack com sólida atuação no desenvolvimento de soluções completas de ponta a ponta — desde aplicações mobile performáticas até backends robustos, distribuídos e de alta escala.
+              </p>
+              <p className="text-lg text-foreground/90 leading-relaxed mb-6">
+                Minha expertise central combina <span className="text-primary font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-primary after:rounded-full">Flutter</span> no ecossistema mobile e web com ecossistemas robustos de backend em <span className="text-primary font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-primary after:rounded-full">C# / .NET</span> e <span className="text-accent font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-accent after:rounded-full">Node.js (NestJS)</span>, além de integrações corporativas complexas com ADVPL/TLPP (TOTVS Protheus). Sou guiado por padrões de Arquitetura, DDD, CQRS e SOLID, priorizando código limpo, testes automatizados e modelagem eficiente de dados (SQL Server, PostgreSQL com Prisma/Supabase e Redis).
+              </p>
+              <p className="text-lg text-foreground/90 leading-relaxed">
+                Busco constantemente elevar a qualidade técnica e a produtividade de engenharia, explorando sistemas de inteligência artificial aplicada, microsserviços e mensageria assíncrona para resolver problemas de negócio de alto impacto.
+              </p>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-fade-in" style={{ animationDelay: "200ms" }}>

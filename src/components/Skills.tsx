@@ -6,22 +6,22 @@ const skillsData = [
   {
     category: "Backend",
     icon: Code2,
-    skills: [".NET", "C#", "Ruby on Rails", "NestJS", "Node.js", "ADVPL"],
+    skills: [".NET", "C#", "Ruby on Rails", "NestJS", "Node.js", "ADVPL", "Django"],
   },
   {
     category: "Frontend & Mobile",
     icon: Smartphone,
-    skills: ["Flutter", "React", "TypeScript", "Tailwind CSS"],
+    skills: ["Flutter", "React", "TypeScript", "Tailwind CSS", "Django"],
   },
   {
     category: "Databases",
     icon: Database,
-    skills: ["SQL Server", "PostgreSQL", "MySQL"],
+    skills: ["SQL Server", "PostgreSQL", "Redis"],
   },
   {
     category: "Architecture & Tools",
     icon: Layers,
-    skills: ["REST APIs", "Microservices", "Git", "Docker", "CI/CD"],
+    skills: ["REST APIs", "Microservices", "Git", "Docker", "Mensageria"],
   },
 ];
 
